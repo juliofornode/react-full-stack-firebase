@@ -6,12 +6,7 @@ import { createStore, applyMiddleware } from 'redux';
 import App from './components/app';
 import reducers from './reducers';
 
-//firebase
-//import './firebase/firebase.js';
-import thunk from 'redux-thunk';
-
-
-const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
+const createStoreWithMiddleware = applyMiddleware()(createStore);
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>

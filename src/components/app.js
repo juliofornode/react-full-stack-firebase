@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
-import CommentBox from './comment_box';
-import CommentList from './comment_list';
-import Steps from './steps';
+
+import CarList from '../containers/car-list';
+import CarDetail from '../containers/car-detail';
 
 export default class App extends Component {
   render() {
     return (
       <div style={{marginTop: '100px'}}>
-        <Steps />
-        <div style={{marginTop: '100px'}}></div>
-        <CommentBox />
-        <CommentList />
+        <CarList />
+        <CarDetail />
       </div>
     );
   }
